@@ -1,4 +1,4 @@
-baseURL: ""
+baseURL: "https://www.joshuaseverud.com"
 languageCode: "en-us"
 title: "Joshua Severud"
 theme: hugo-profile
@@ -126,7 +126,7 @@ params:
     intro: "Hi, my name is"
     title: "Joshua."
     subtitle: "I am a philosopher"
-    content: "I found purpose in life by thinking, and I try my best to continue to think about serious problems that we, as humans, face."
+    content: "« J'existe par ce que je pense... et je ne peux pas m'empecher de penser. »"
     image: /images/hero.png
     bottomImage:
       enable: true
@@ -153,11 +153,11 @@ params:
     title: "About Me"
     image: "/images/me.png"
     content: |-
-      I am someone who grew up with a love of reading. As I grew older, my love of reading helped me to start to wonder about the world in a more substantial way. I found myself asking questions that my parents could no longer answer, and when I discovered philosophy at university, I knew that it was what I needed to pursue in order to answer my questions.  
+      A love for reading was instilled into me early on by my parents, and as I grew older I found that my love for reading hadn’t diminished and that it was able to help me wonder about the world in a more substantial way. I found myself asking questions that seemingly had no answers, and I was not equipped with the tools to think about the answers myself. I would not find these tools until university where I took my first philosophy class on a whim. I fell in love immediately, and knew that the best way to better myself was to pursue a competency in this newfound discipline.
 
-      I am interested in continental French philosophy from the 19th and 20th centuries. My primary focus of study has been in interpersonal relationships and the ethics involved with encounters with the Other. My master’s thesis was about the possibility of such relationships and I focused my attention on Levinas’s ethics and Heidegger’s ontology.     
+      I am interested in 19th and 20th century French philosophy. My primary focus has been on interpersonal relationships, ethics, existentialism, phenomenology, and responsibility. I am interested in the philosophies of Sartre, Levinas, Heidegger, Camus, Derrida, and Baudrillard. Recently I have been trying to make my way through Hegel’s Phenomenology of Spirit. 
 
-      I am currently interested in learning about Norwegian philosophy, particularly Norwegian ethics, existentialism, and phenomenology.
+      I am also currently interested in learning more about Norwegian philosophy, particularly in the aforementioned areas of interest. If you have any recommendations, my mailbox is open. 
     skills:
       enable: false
       title: "Here are a few technologies I've been working with recently:"
@@ -185,7 +185,7 @@ params:
         info:
           enable: true
           content: I worked as an EFL instructor in South Korea.
-        content: I am currently working as an English instructor in Seoul, South Korea. I design and manage courses, and teach students at a variety of different levels.
+        content: I am currently working as an English instructor in Seoul, South Korea. I design and manage courses while teaching students at a variety of different levels and ages. I have also been involved in various administrative tasks including website maintenance and schedule creation for all employed instructors.
 
       - job: "Adjunct Lecturer"
         company: "Louisiana State University"
@@ -197,7 +197,7 @@ params:
         info:
           enable: true
           content: I taught PHIL2020 while completing my master's in philosophy.
-        content: While completing my master's at LSU, I was asked to teach PHIL2020 - Ethics in addition to my regular student and GTA obligations. As the lecturer of my ethics class, I designed a syllabus and gave students an introduction to ethics to great success. We covered utilitarianism, virtue ethics, and deontology before moving on to existentialism and Levinasian philosophy. 
+        content: While completing my master’s at LSU, I was asked to teach a sophomore-level ethics course in the philosophy department in addition to my regular student and GTA obligations. As the lecturer of my ethics course, I designed a syllabus and gave students an introduction to the topic to great success. We covered utilitarianism, virtue ethics, and deontology before moving on to existentialism and Levinasian ethics.
 
       - job: "Graduate Teaching Assistant"
         company: "Louisiana State University"
@@ -209,7 +209,7 @@ params:
         info:
           enable: true
           content: I worked as a GTA while completing my master's in philosophy.
-        content: As a GTA I was responsible for grading students' work and taking attendance. I also helped to teach some classes.
+        content: While completing my master’s at LSU I was also working as a GTA which meant that I was responsible for grading students’ work and taking attendance. I also helped to teach some classes, and learned a lot from the experience.
 
   # Education
   education:
@@ -223,20 +223,20 @@ params:
           url: "https://www.lsu.edu/hss/philosophy/index/php"
         date: "2021 - 2023"
         GPA: "4.0 of 4.0"
-        content: At LSU I focused on 19th and 20th century French thought. I had an interest in interpersonal relationships, and so wrote my thesis on the possibility of such relationships. I focused my attention on the ethics of Levinas and the ontology of Heidegger. The key idea for my thesis, "The Possibility of Relationships with Others", was Derrida's notion of the event. 
+        content: At LSU I focused on 19th and 20th century French thought and as such worked with Dr. François Raffoul on my thesis. At LSU I was able to better explore my interests in interpersonal relationships and ethics. I focused my attention on Levinas’s ethics, Heidegger’s ontology, and Derrida’s event. My thesis was called “The Possibility of Relationships with Others”.
       - title: "Language Program"
         school: 
           name: "Université Catholique de Lyon"
           url: "https://www.ucly.fr/"
         date: "January 2021 - July 2021"
-        content: At UCLy I studied French language to jumpstart my language ability before graduate school. I achieved a language level of B1. 
+        content: At UCLy, I studied French in order to jump-start my language ability before graduate school. I achieved a language level of B1, but have continued improving since.
       - title: "Bachelor of Arts"
         school:
           name: "University of North Dakota"
           url: "https://und.edu/"
         date: "2017 - 2020"
         GPA: "3.6 of 4.0"
-        content: At UND I discovered philosophy and explored my interest in English literature. I doubled majored in philosophy and English. The focus of the latter was English literature (as opposed to American literature).
+        content: At UND I discovered philosophy and explored my interests in my English classes. I double majored in philosophy and English, the focus of the latter being English literature (as opposed to American literature).
         featuredLink:
           enable: false
           name: ""
