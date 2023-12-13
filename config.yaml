@@ -126,7 +126,7 @@ params:
     intro: "Hi, my name is"
     title: "Joshua."
     subtitle: "I am a philosopher"
-    content: "« J'existe par ce que je pense... et je ne peux pas m'empecher de penser. »"
+    content: "« J'existe par ce que je pense... et je ne peux pas m'empecher de penser. » -*Jean Paul Sartre*"
     image: /images/hero.png
     bottomImage:
       enable: true
