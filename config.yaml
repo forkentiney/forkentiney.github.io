@@ -254,26 +254,23 @@ params:
 
   # projects
   projects:
-    enable: false
-    # title: "Custom Name"
+    enable: true
+    title: Extracurricular Activities
     items:
-      - title: 
-        content: 
-        image: 
+      - title: Brookstock Minecraft Server 
+        content: I host a Minecraft server to play on with friends and family. 
+        image: /images/bms.png 
         featured:
-          name: 
-          link: 
-        badges:
-          - ""
-          - ""
-          - ""
+          name: Website 
+          link: https://minecraft.brookstock.net 
+        # badges:
+          # - ""
+      - title: Hyprland on Arch
+        content: I have been working on customising my first configuration on Arch Linux. I keep my dotfiles organized on Github which also helps me to track changes made to my system. Hopefully it will also help me to recover my system configuration should anything go wrong with my laptop. 
+        image: /images/hyprland.png
         links:
-          - icon: 
-            url: 
-          - icon: 
-            url: 
-          - icon:
-            url: 
+          - icon: fab fa-github 
+            url: https://github.com/forkentiney/hyprland-dots 
 
   #Contact
   contact:
@@ -281,7 +278,7 @@ params:
     # title: "Custom Name"
     content: Feel free to contact me about anything you like. 
     email: contact@joshuaseverud.com
-    btnName: email
+    btnName: e-mail
     # formspree:
     #   enable: true # `contact.email` value will be ignored
     #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
