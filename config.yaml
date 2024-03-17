@@ -155,19 +155,19 @@ params:
     content: |-
       A love for reading was instilled into me early on by my parents, and as I grew older I found that my love for reading hadn’t diminished and that it was able to help me wonder about the world in a more substantial way. I found myself asking questions that seemingly had no answers, and I was not equipped with the tools to think about the answers myself. I would not find these tools until university where I took my first philosophy class on a whim. I fell in love immediately, and knew that the best way to better myself was to pursue a competency in this newfound discipline.
 
-      I am interested in 19th and 20th century French philosophy. My primary focus has been on interpersonal relationships, ethics, existentialism, phenomenology, and responsibility. I am interested in the philosophies of Sartre, Levinas, Heidegger, Camus, Derrida, and Baudrillard. Recently I have been trying to make my way through Hegel’s Phenomenology of Spirit. 
+      I am interested in 19th and 20th century French philosophy. My primary focus has been on interpersonal relationships, ethics, existentialism, phenomenology, and responsibility. I am interested in the philosophies of Sartre, Levinas, Heidegger, Camus, Derrida, and Baudrillard. Recently I have been trying to make my way through Hegel’s _Phenomenology of Spirit_. 
 
-      I am also currently interested in learning more about Norwegian philosophy, particularly in the aforementioned areas of interest. If you have any recommendations, my mailbox is open. 
+      I am also currently interested in learning more about Norwegian philosophy, particularly in the aforementioned areas of interest. If you have any recommendations, my mailbox is open. Furthermore, issues of Internet privacy have been of interest to me, and I hope to explore the topic further in anticipation of my upcoming applications to PhD programs.  
+
     skills:
-      enable: false
-      title: "Here are a few technologies I've been working with recently:"
+      enable: true
+      title: "Here is a consolodated list of my interestes:"
       items:
-        - "HTML"
-        - "CSS"
-        - "JavaScript"
-        - "React"
-        - "Node"
-        - "Express"
+        - "Phenomenology"
+        - "Existentialism"
+        - "Ethics"
+        - "19th & 20th Century French thought"
+        - "Postmodernism (e.g., Baudrillard)"
 
   # Experience
   experience:
@@ -175,9 +175,21 @@ params:
     # title: "Custom Name"
     items:
       - job: "EFL Instructor"
+        company: "Plato English School"
+        date: "March 2024 – present"
+        featuredLink:
+          enable: false
+          name: ""
+          url: ""
+        info:
+         enable: true
+         content: I worked as an EFL instructor in South Korea
+        content: After working for six months in South Korea I changed my place of work to give myself more time to work on my interests in philosophy (and computers). At Plato English School I was responsible for four classes: two kindergarten classes during the morning hours of each regular working day, one first grade elementary class four days a week, and a fifth grade elementary class two days a week. I was responsible for designing lesson plans for each day that could incorporate all the teaching goals as defined in the school's curriculum. Additionally, I created calendars and chose certain materials to be used in class. Notably, the older students that I taught were able to have debates where I used the skills I learned from studying philosophy to encourage, enrich, and push students further while debating each other.  
+
+      - job: "EFL Instructor"
         company: "WILS Language School"
         companyUrl: "https://wils.co.kr"
-        date: "September 2023 - present"
+        date: "September 2023 – February 2024"
         featuredLink:
           enable: false
           name: ""
@@ -185,11 +197,11 @@ params:
         info:
           enable: true
           content: I worked as an EFL instructor in South Korea.
-        content: I am currently working as an English instructor in Seoul, South Korea. I design and manage courses while teaching students at a variety of different levels and ages. I have also been involved in various administrative tasks including website maintenance and schedule creation for all employed instructors.
+        content: When I arrieved in South Korea I started work at WILS Lanugage School. At WILS, I designed and managed courses while teaching students at a variety of different levels and ages (from 10 to 16 with the majority of my work being with students somewhere in the middle of that range). I have also been involved in various administrative tasks including website maintenance, acting as a hiring manager, and brokering various external deals (e.g., franchising, tutoring partnerships).
 
       - job: "Adjunct Lecturer"
-        company: "Louisiana State University"
-        companyUrl: "https://www.lsu.edu/hss/philosophy/index/php"
+        company: "LSU"
+        companyUrl: "https://www.lsu.edu/hss/philosophy/index.php"
         date: "Fall 2022"
         featuredLink:
           enable: false
@@ -197,19 +209,19 @@ params:
         info:
           enable: true
           content: I taught PHIL2020 while completing my master's in philosophy.
-        content: While completing my master’s at LSU, I was asked to teach a sophomore-level ethics course in the philosophy department in addition to my regular student and GTA obligations. As the lecturer of my ethics course, I designed a syllabus and gave students an introduction to the topic to great success. We covered utilitarianism, virtue ethics, and deontology before moving on to existentialism and Levinasian ethics.
+        content: While completing my master’s at Louisiana State University, I was asked to teach a sophomore-level ethics course in the philosophy department in addition to my regular student and GTA obligations. As the lecturer of my ethics course, I designed a syllabus and gave students an introduction to the topic to great success. We covered utilitarianism, virtue ethics, and deontology before moving on to existentialism and Levinasian ethics.
 
       - job: "Graduate Teaching Assistant"
-        company: "Louisiana State University"
+        company: "LSU"
         companyUrl: "https://www.lsu.edu/hss/philosophy/index.php"
-        date: "August 2021 - May 2023"
+        date: "August 2021 – May 2023"
         featuredLink:
           enable: false
           url: ""
         info:
           enable: true
           content: I worked as a GTA while completing my master's in philosophy.
-        content: While completing my master’s at LSU I was also working as a GTA which meant that I was responsible for grading students’ work and taking attendance. I also helped to teach some classes, and learned a lot from the experience.
+        content: While completing my master’s at Louisiana State University I was also working as a GTA which meant that I was responsible for grading students’ work and taking attendance. I also helped to teach some classes, and learned a lot from the experience.
 
   # Education
   education:
