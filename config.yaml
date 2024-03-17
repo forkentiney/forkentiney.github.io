@@ -176,7 +176,7 @@ params:
     items:
       - job: "EFL Instructor"
         company: "Plato English School"
-        companyUrl: ""
+        companyUrl: "https://naver.me/G6fZwmeT"
         date: "March 2024 – present"
         featuredLink:
           enable: false
@@ -197,8 +197,8 @@ params:
           url: ""
         info:
           enable: true
-          content: "I worked as an EFL instructor in South Korea.
-        content: When I arrieved in South Korea I started work at WILS Lanugage School. At WILS, I designed and managed courses while teaching students at a variety of different levels and ages (from 10 to 16 with the majority of my work being with students somewhere in the middle of that range). I have also been involved in various administrative tasks including website maintenance, acting as a hiring manager, and brokering various external deals (e.g., franchising, tutoring partnerships)."
+          content: "I worked as an EFL instructor in South Korea."
+        content: "When I arrieved in South Korea I started work at WILS Lanugage School. At WILS, I designed and managed courses while teaching students at a variety of different levels and ages (from 10 to 16 with the majority of my work being with students somewhere in the middle of that range). I was also involved in various administrative tasks including website maintenance, acting as a hiring manager, and brokering a number of external deals (e.g., franchising, tutoring partnerships)."
 
       - job: "Adjunct Lecturer"
         company: "LSU"
