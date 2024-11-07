@@ -174,10 +174,23 @@ params:
     enable: true
     # title: "Custom Name"
     items:
+      - job: "Substitute Teacher"
+        company: "GFPS"
+        companyUrl: "https://www.gfschools.org"
+        date: "October 2024 – present"
+        featuredLink:
+          enable: false
+          name: ""
+          url: ""
+        info:
+          enable: true
+          content: "I worked as a substitute teacher for the Grand Forks Public School system."
+        content: "After some family health issues arose, I returned to the U.S. to work as a substitute teacher and prepare my PhD applications. I worked filling in daily as needed, but also worked a couple long-term positions (greater than 20 consecutive days for the same teacher) where I was allowed to teach the course using class material."
+      
       - job: "EFL Instructor"
         company: "Plato English School"
         companyUrl: "https://naver.me/G6fZwmeT"
-        date: "March 2024 – present"
+        date: "March 2024 – July 2024"
         featuredLink:
           enable: false
           name: ""
