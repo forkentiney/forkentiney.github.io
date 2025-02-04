@@ -287,18 +287,25 @@ params:
       - title: Brookstock Minecraft Server 
         content: I host a Minecraft server to play on with friends and family. 
         image: /images/bms.png 
-        featured:
-          name: Website 
-          link: https://minecraft.brookstock.net 
+        links:
+          - icon: fab fa-link
+            url: https://minecraft.brookstock.net 
         # badges:
           # - ""
+      - title: RRHS Game Club Server
+        content: I host a Minecraft server for the RRHS game club as a volunteer service in my free time. The server is moderated by myself and students.
+        image: /images/rrgs.png
+        links:
+          - icon: fab fa-link
+            url: https://rrhs.brookstock.net
+          - icon: fab fa-github
+            url: https://github.com/forkentiney/rrhs-gcmc
       - title: Hyprland on Arch
         content: I have been working on customising my first configuration on Arch Linux. I keep my dotfiles organized on Github which also helps me to track changes made to my system. Hopefully it will also help me to recover my system configuration should anything go wrong with my laptop. 
         image: /images/hyprland.png
         links:
           - icon: fab fa-github 
             url: https://github.com/forkentiney/hyprland-dots 
-
   #Contact
   contact:
     enable: true
