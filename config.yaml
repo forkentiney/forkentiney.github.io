@@ -144,9 +144,9 @@ params:
         #- icon: fab fa-x-twitter
         #  url: https://example.com
       customIcons:
-        - icon: /square-letterboxd.svg
+        - icon: /images/icons/square-letterboxd.svg
           url: "https://letterboxd.com/forkentiney/"
-        - icon: /listenbrainz.svg
+        - icon: /images/icons/listenbrainz.svg
           url: "https://listenbrainz.org/user/Forkentiney"
 
   # About
