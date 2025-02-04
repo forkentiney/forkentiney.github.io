@@ -288,15 +288,15 @@ params:
         content: I host a Minecraft server to play on with friends and family. 
         image: /images/bms.png 
         links:
-          - icon: fab fa-link
+          - icon: fa fa-link
             url: https://minecraft.brookstock.net 
         # badges:
           # - ""
       - title: RRHS Game Club Server
         content: I host a Minecraft server for the RRHS game club as a volunteer service in my free time. The server is moderated by myself and students.
-        image: /images/rrgs.png
+        image: /images/rrhs.png
         links:
-          - icon: fab fa-link
+          - icon: fa fa-link
             url: https://rrhs.brookstock.net
           - icon: fab fa-github
             url: https://github.com/forkentiney/rrhs-gcmc
