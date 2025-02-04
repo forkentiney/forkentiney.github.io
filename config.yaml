@@ -125,7 +125,7 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Joshua."
-    subtitle: "I am a philosopher"
+    subtitle: "I like philosophy"
     content: "« J'existe par ce que je pense... et je ne peux pas m'empêcher de penser. » -*Jean Paul Sartre*"
     image: /images/hero.png
     bottomImage:
@@ -153,12 +153,11 @@ params:
     title: "About Me"
     image: "/images/me.png"
     content: |-
-      A love for reading was instilled into me early on by my parents, and as I grew older I found that my love for reading hadn’t diminished and that it was able to help me wonder about the world in a more substantial way. I found myself asking questions that seemingly had no answers, and I was not equipped with the tools to think about the answers myself. I would not find these tools until university where I took my first philosophy class on a whim. I fell in love immediately, and knew that the best way to better myself was to pursue a competency in this newfound discipline.
+      A love for reading was instilled into me early on by my parents, and as I grew older, I found that my love for reading hadn’t diminished and that it was able to help me wonder about the world in a meaningful way. I found myself asking questions that had no apparent answers, and I was not equipped with the tools to explore possible answers myself. I would not find these tools until university where I took my first philosophy class on a whim. I discovered a passion for my studies, and knew that the best way to better myself was to pursue a competency in this newfound discipline.
 
-      I am interested in 19th and 20th century French philosophy. My primary focus has been on interpersonal relationships, ethics, existentialism, phenomenology, and responsibility. I am interested in the philosophies of Sartre, Levinas, Heidegger, Camus, Derrida, and Baudrillard. Recently I have been trying to make my way through Hegel’s _Phenomenology of Spirit_. 
+      I am interested in 19th and 20th century French philosophy. My primary focus has been on interpersonal relationships, ethics, existentialism, phenomenology, and responsibility. I am interested in the philosophies of Sartre, Levinas, Heidegger, Camus, Derrida, and Baudrillard. Recently I have been trying to make my way through Merleau-Ponty’s Phenomenology of Perception.
 
-      I am also currently interested in learning more about Norwegian philosophy, particularly in the aforementioned areas of interest. If you have any recommendations, my mailbox is open. Furthermore, issues of Internet privacy have been of interest to me, and I hope to explore the topic further in anticipation of my upcoming applications to PhD programs.  
-
+      I am also currently interested in learning more about Norwegian philosophy, particularly in the aforementioned areas of interest. If you have any recommendations, my mailbox is open. Furthermore, issues of Internet privacy have been of interest to me. Professionally, however, I hope to explore ideas within phenomenology and existentialism. I am currently interested in the differences in existential thought that arise between Cartesian and non-Cartesian understandings of our existence. 
     skills:
       enable: true
       title: "Here is a consolodated list of my interestes:"
