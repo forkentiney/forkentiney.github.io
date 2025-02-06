@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Joshua Severud</title>
+    <link>http://localhost:1313/blogs/</link>
+    <description>Recent content in Blogs on Joshua Severud</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 13 Dec 2023 17:44:55 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Possibility of Relationships with Others</title>
+      <link>http://localhost:1313/blogs/thesis/</link>
+      <pubDate>Wed, 13 Dec 2023 17:44:55 +0900</pubDate>
+      <guid>http://localhost:1313/blogs/thesis/</guid>
+      <description>&lt;p&gt;I thought it would be fun to include a markdown version of my master&amp;rsquo;s thesis here for anyone to read if they so desired. I don&amp;rsquo;t imagine the conversion from .docx to markdown left the document unscathed, but with time the errors will be ironed out.&lt;/p&gt;&#xA;&lt;h1 id=&#34;abstract&#34;&gt;Abstract&lt;/h1&gt;&#xA;&lt;p&gt;Levinas offers a rich philosophical insight into the kind of responsibility and ethics that we must have for the Other. This involves a certain conception of what it means to be hospitable which turns out to be impossible. In order to talk about how this impossible relationship can occur, I use Heidegger&amp;rsquo;s description of the existential Being-with structure and Derrida&amp;rsquo;s conception of the event in order to make sense of how this Levinasian relationship can possibly exist in spite of—or thanks to—its impossibility.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
