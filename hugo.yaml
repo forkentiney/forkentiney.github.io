@@ -289,9 +289,9 @@ params:
       - title: Brookstock Minecraft Server 
         content: I host a Minecraft server to play on with friends and family. 
         image: /images/bms.png 
-        #links:
-        #  - icon: fa fa-link
-        #    url: https://minecraft.brookstock.net 
+        links:
+          - icon: fa fa-link
+            url: https://www.brookstock.net 
         # badges:
           # - ""
       - title: RRHS Game Club Server
