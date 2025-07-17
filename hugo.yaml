@@ -1,0 +1,360 @@
+baseURL: "https://www.joshuaseverud.com"
+languageCode: "en-us"
+title: "Joshua Severud"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+pagination:
+  pagerSize: 3
+
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blogs
+      weight: 1
+    #- identifier: gallery
+    #  name: Gallery
+    #  title: Blog posts
+    #  url: /gallery
+    #  weight: 2
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Joshua Severud"
+  description: All about me
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+  
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    # defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # color:
+  #   textColor:
+  #   secondaryTextColor:
+  #   backgroundColor:
+  #   secondaryBackgroundColor:
+  #   primaryColor:
+  #   secondaryColor:
+
+  #   darkmode:
+  #     textColor:
+  #     secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Joshua Severud" # Brand name for the brand | default is the title variable
+    disableSearch: false
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hey, my name is"
+    title: "Joshua."
+    subtitle: "Here's a little about me."
+    content: "« J'existe par ce que je pense... et je ne peux pas m'empêcher de penser. » -*Jean Paul Sartre*"
+    image: /images/hero.png
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Curriculum Vitae"
+      url: "/jseverud_cv.pdf"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/forkentiney
+        #- icon: fab fa-x-twitter
+        #  url: https://example.com
+      customIcons:
+        - icon: /images/icons/square-letterboxd.svg
+          url: "https://letterboxd.com/forkentiney/"
+        - icon: /images/icons/listenbrainz.svg
+          url: "https://listenbrainz.org/user/Forkentiney"
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/me.png"
+    content: |-
+      A love for reading was instilled into me early on by my parents, and as I grew older, I found that my love for reading hadn’t diminished and that it was able to help me wonder about the world in a meaningful way. I found myself asking questions that had no apparent answers, and I was not equipped with the tools to explore possible answers myself. I would not find these tools until university when I took my first philosophy class on a whim. I discovered a passion for studies, and quickly came to realize that the best way to better myself was to pursue a competency in this newfound discipline.
+
+      I am interested in 19th and 20th Century philosophy, particularly within the French tradition. My primary focus has been on interpersonal relationships, ethics, existentialism, phenomenology, and responsibility. I am interested in the philosophies of Sartre, Levinas, Heidegger, Camus, Derrida, and Baudrillard. Recently I have been trying to make my way through Merleau-Ponty’s _Phenomenology of Perception_.
+
+      Professionally, I hope to explore ideas within phenomenology and existentialism. I am currently interested in the differences in existential thought that arise between Cartesian and non-Cartesian understandings of our existence.
+    skills:
+      enable: true
+      title: "Here is a list of my interests:"
+      items:
+        - "Phenomenology"
+        - "Existentialism"
+        - "Ethics"
+        - "19th & 20th Century French thought"
+        - "Postmodernism (e.g., Baudrillard)"
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - job: "Substitute Teacher"
+        company: "GFPS"
+        companyUrl: "https://www.gfschools.org"
+        date: "October 2024 – present"
+        featuredLink:
+          enable: false
+          name: ""
+          url: ""
+        info:
+          enable: true
+          content: "I worked as a substitute teacher for the Grand Forks Public School system."
+        content: "After some family health issues arose, I returned to the U.S. to work as a substitute teacher and prepare my PhD applications. I worked filling in daily as needed, but also worked a couple long-term positions (greater than 20 consecutive days for the same teacher) where I was allowed to teach the course using class material."
+      
+      - job: "EFL Instructor"
+        company: "Plato English School"
+        companyUrl: "https://naver.me/G6fZwmeT"
+        date: "March 2024 – July 2024"
+        featuredLink:
+          enable: false
+          name: ""
+          url: ""
+        info:
+          enable: true
+          content: "I worked as an EFL instructor in South Korea"
+        content: "After working for six months in South Korea I changed my place of work to give myself more time to work on my interests in philosophy (and computers). At Plato English School I was responsible for four classes: two kindergarten classes during the morning hours of each regular working day, one first grade elementary class four days a week, and a fifth grade elementary class two days a week. I was responsible for designing lesson plans for each day that could incorporate all the teaching goals as defined in the school's curriculum. Additionally, I created calendars and chose certain materials to be used in class. Notably, the older students that I taught were able to have debates where I used the skills I learned from studying philosophy to encourage, enrich, and push students further while debating each other."
+
+      - job: "EFL Instructor"
+        company: "WILS Language School"
+        companyUrl: "https://wils.co.kr"
+        date: "September 2023 – February 2024"
+        featuredLink:
+          enable: false
+          name: ""
+          url: ""
+        info:
+          enable: true
+          content: "I worked as an EFL instructor in South Korea."
+        content: "When I arrieved in South Korea I started work at WILS Lanugage School. At WILS, I designed and managed courses while teaching students at a variety of different levels and ages (from 10 to 16 with the majority of my work being with students somewhere in the middle of that range). I was also involved in various administrative tasks including website maintenance, acting as a hiring manager, and brokering a number of external deals (e.g., franchising, tutoring partnerships)."
+
+      - job: "Adjunct Lecturer"
+        company: "LSU"
+        companyUrl: "https://www.lsu.edu/hss/philosophy/index.php"
+        date: "Fall 2022"
+        featuredLink:
+          enable: false
+          url: ""
+        info:
+          enable: true
+          content: "I taught PHIL2020 while completing my master's in philosophy."
+        content: "While completing my master’s at Louisiana State University, I was asked to teach a sophomore-level ethics course in the philosophy department in addition to my regular student and GTA obligations. As the lecturer of my ethics course, I designed a syllabus and gave students an introduction to the topic to great success. We covered utilitarianism, virtue ethics, and deontology before moving on to existentialism and Levinasian ethics."
+
+      - job: "Graduate Teaching Assistant"
+        company: "LSU"
+        companyUrl: "https://www.lsu.edu/hss/philosophy/index.php"
+        date: "August 2021 – May 2023"
+        featuredLink:
+          enable: false
+          url: ""
+        info:
+          enable: true
+          content: "I worked as a GTA while completing my master's in philosophy."
+        content: "While completing my master’s at Louisiana State University I was also working as a GTA which meant that I was responsible for grading students’ work and taking attendance. I also helped to teach some classes, and learned a lot from the experience."
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "Master of Philosophy"
+        school:
+          name: "Louisiana State University"
+          url: "https://www.lsu.edu/hss/philosophy/index/php"
+        date: "2021 - 2023"
+        GPA: "4.0 of 4.0"
+        content: "At LSU I focused on 19th and 20th century French thought and as such worked with Dr. François Raffoul on my thesis. At LSU I was able to better explore my interests in interpersonal relationships and ethics. I focused my attention on Levinas’s ethics, Heidegger’s ontology, and Derrida’s event. My thesis was called “The Possibility of Relationships with Others”."
+      - title: "Language Program"
+        school: 
+          name: "Université Catholique de Lyon"
+          url: "https://www.ucly.fr/"
+        date: "January 2021 - July 2021"
+        content: "At UCLy, I studied French in order to jump-start my language ability before graduate school. I achieved a language level of B1, but have continued improving since."
+      - title: "Bachelor of Arts"
+        school:
+          name: "University of North Dakota"
+          url: "https://und.edu/"
+        date: "2017 - 2020"
+        GPA: "3.6 of 4.0"
+        content: "At UND I discovered philosophy and explored my interests in my English classes. I double majored in philosophy and English, the focus of the latter being English literature (as opposed to American literature)."
+        featuredLink:
+          enable: false
+          name: ""
+          url: ""
+
+  # Achievements
+  achievements:
+    enable: false
+    # title: "Custom Name"
+    items:
+      - title: 
+        content: 
+        url: 
+        image: 
+
+  # projects
+  projects:
+    enable: true
+    title: Extracurricular Activities
+    items:
+      - title: Brookstock Minecraft Server 
+        content: I host a Minecraft server to play on with friends and family. 
+        image: /images/bms.png 
+        #links:
+        #  - icon: fa fa-link
+        #    url: https://minecraft.brookstock.net 
+        # badges:
+          # - ""
+      - title: RRHS Game Club Server
+        content: I host a Minecraft server for the RRHS game club as a volunteer service in my free time. The server is moderated by myself and students.
+        image: /images/rrhs.png
+        links:
+          - icon: fa fa-link
+            url: https://rrhs.brookstock.net
+          - icon: fab fa-github
+            url: https://github.com/forkentiney/rrhs-gcmc
+      - title: Hyprland on Arch
+        content: (This has been abandonded. I now use KDE Plasma but if I ever get a new laptop I will restart this project)I have been working on customising my first configuration on Arch Linux. I keep my dotfiles organized on Github which also helps me to track changes made to my system. Hopefully it will also help me to recover my system configuration should anything go wrong with my laptop. 
+        image: /images/hyprland.png
+        links:
+          - icon: fab fa-github 
+            url: https://github.com/forkentiney/hyprland-dots 
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: Feel free to contact me about anything you like. 
+    email: contact@joshuaseverud.com
+    btnName: e-mail
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: true
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/forkentiney
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "2 Jan 2006"
+    articleList: "2 Jan 2006"
+    articleRecent: "2 Jan 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
