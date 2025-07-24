@@ -191,7 +191,7 @@ params:
         content: "After some family health issues arose, I returned to the U.S. to work as a substitute teacher and prepare my PhD applications. I worked filling in daily as needed, but also worked a couple long-term positions (greater than 20 consecutive days for the same teacher) where I was allowed to teach the course using class material."
       
       - job: "EFL Instructor"
-        company: "Plato English School"
+        company: "Plato"
         companyUrl: "https://naver.me/G6fZwmeT"
         date: "March 2024 – July 2024"
         featuredLink:
@@ -204,7 +204,7 @@ params:
         content: "After working for six months in South Korea I changed my place of work to give myself more time to work on my interests in philosophy (and computers). At Plato English School I was responsible for four classes: two kindergarten classes during the morning hours of each regular working day, one first grade elementary class four days a week, and a fifth grade elementary class two days a week. I was responsible for designing lesson plans for each day that could incorporate all the teaching goals as defined in the school's curriculum. Additionally, I created calendars and chose certain materials to be used in class. Notably, the older students that I taught were able to have debates where I used the skills I learned from studying philosophy to encourage, enrich, and push students further while debating each other."
 
       - job: "EFL Instructor"
-        company: "WILS Language School"
+        company: "WILS"
         companyUrl: "https://wils.co.kr"
         date: "September 2023 – February 2024"
         featuredLink:
@@ -228,18 +228,6 @@ params:
           content: "I taught PHIL2020 while completing my master's in philosophy."
         content: "While completing my master’s at Louisiana State University, I was asked to teach a sophomore-level ethics course in the philosophy department in addition to my regular student and GTA obligations. As the lecturer of my ethics course, I designed a syllabus and gave students an introduction to the topic to great success. We covered utilitarianism, virtue ethics, and deontology before moving on to existentialism and Levinasian ethics."
 
-      - job: "Graduate Teaching Assistant"
-        company: "LSU"
-        companyUrl: "https://www.lsu.edu/hss/philosophy/index.php"
-        date: "August 2021 – May 2023"
-        featuredLink:
-          enable: false
-          url: ""
-        info:
-          enable: true
-          content: "I worked as a GTA while completing my master's in philosophy."
-        content: "While completing my master’s at Louisiana State University I was also working as a GTA which meant that I was responsible for grading students’ work and taking attendance. I also helped to teach some classes, and learned a lot from the experience."
-
   # Education
   education:
     enable: true
@@ -252,7 +240,7 @@ params:
           url: "https://www.lsu.edu/hss/philosophy/index/php"
         date: "2021 - 2023"
         GPA: "4.0 of 4.0"
-        content: "At LSU I focused on 19th and 20th century French thought and as such worked with Dr. François Raffoul on my thesis. At LSU I was able to better explore my interests in interpersonal relationships and ethics. I focused my attention on Levinas’s ethics, Heidegger’s ontology, and Derrida’s event. My thesis was called “The Possibility of Relationships with Others”."
+        content: "At LSU I focused on 19th and 20th century French thought and as such worked with Dr. François Raffoul on my thesis. I was able to better explore my interests in interpersonal relationships and ethics. I focused my attention on Levinas’s ethics, Heidegger’s ontology, and Derrida’s event. My thesis was called “The Possibility of Relationships with Others”. Additionally, while completing my master’s I also worked as a GTA which meant that I was responsible for grading students’ work and taking attendance. I also helped to teach some classes, and learned a lot from the experience."
       - title: "Language Program"
         school: 
           name: "Université Catholique de Lyon"
@@ -303,7 +291,7 @@ params:
           - icon: fab fa-github
             url: https://github.com/forkentiney/rrhs-gcmc
       - title: Hyprland on Arch
-        content: (This has been abandonded. I now use KDE Plasma but if I ever get a new laptop I will restart this project)I have been working on customising my first configuration on Arch Linux. I keep my dotfiles organized on Github which also helps me to track changes made to my system. Hopefully it will also help me to recover my system configuration should anything go wrong with my laptop. 
+        content: (This has been abandonded. I now use KDE Plasma but if I ever get a new laptop I will restart this project) - I have been working on customising my first configuration on Arch Linux. I keep my dotfiles organized on Github which also helps me to track changes made to my system. Hopefully it will also help me to recover my system configuration should anything go wrong with my laptop. 
         image: /images/hyprland.png
         links:
           - icon: fab fa-github 
