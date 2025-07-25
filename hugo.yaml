@@ -177,6 +177,19 @@ params:
     enable: true
     # title: "Custom Name"
     items:
+      - job: "Adjunct Lecturer"
+        company: "MSU"
+        companyUrl: "https://www.minotstateu.edu/philosophy"
+        date: "Fall 2025"
+        featuredLink:
+          enable: false
+          name: ""
+          url: ""
+        info:
+          enable: true
+          content: "I am teaching ethics and introduction courses."
+        content: "I am filling in at MSU for one semester teaching philosophy online."
+
       - job: "Substitute Teacher"
         company: "GFPS"
         companyUrl: "https://www.gfschools.org"
