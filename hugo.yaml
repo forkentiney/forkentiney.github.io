@@ -159,7 +159,7 @@ params:
     content: |-
       A love for reading was instilled into me early on by my parents, and as I grew older, I found that my love for reading hadn’t diminished and that it was able to help me wonder about the world in a meaningful way. I found myself asking questions that had no apparent answers, and I was not equipped with the tools to explore possible answers myself. I would not find these tools until university when I took my first philosophy class on a whim. I discovered a passion for studies, and quickly came to realize that the best way to better myself was to pursue a competency in this newfound discipline.
 
-      I am interested in 19th and 20th Century philosophy, particularly within the French tradition. My primary focus has been on interpersonal relationships, ethics, existentialism, phenomenology, and responsibility. I am interested in the philosophies of Sartre, Levinas, Heidegger, Camus, Derrida, and Baudrillard. Recently I have been trying to make my way through Merleau-Ponty’s _Phenomenology of Perception_.
+      I am interested in 19th and 20th Century philosophy, particularly within the French tradition. My primary focus has been on interpersonal relationships, ethics, existentialism, phenomenology, and responsibility. I am interested in the philosophies of Sartre, Levinas, Heidegger, Camus, Derrida, and Baudrillard. Recently I have been trying to make my way through Merleau-Ponty’s _Phenomenology of Perception_. Furthermore, I am somewhat troubled by LLMs and their effects on students. Contre Michel Serres, I see this up-and-coming technology as a detriment to thought.
 
       Professionally, I hope to explore ideas within phenomenology and existentialism. I am currently interested in the differences in existential thought that arise between Cartesian and non-Cartesian understandings of our existence.
     skills:
@@ -188,7 +188,7 @@ params:
         info:
           enable: true
           content: "I am teaching ethics and introduction courses."
-        content: "I am filling in at MSU for one semester teaching philosophy online."
+        content: "I am teaching philosophy online at Minot State University for one semester."
 
       - job: "Substitute Teacher"
         company: "GFPS"
@@ -201,7 +201,7 @@ params:
         info:
           enable: true
           content: "I worked as a substitute teacher for the Grand Forks Public School system."
-        content: "After some family health issues arose, I returned to the U.S. to work as a substitute teacher and prepare my PhD applications. I worked filling in daily as needed, but also worked a couple long-term positions (greater than 20 consecutive days for the same teacher) where I was allowed to teach the course using class material."
+        content: "After some family health issues arose, I returned to the U.S. to work as a substitute teacher and prepare my PhD applications. I worked filling in daily as needed, but also worked a couple long-term positions (greater than 20 consecutive days for the same teacher) where I was allowed to teach the course using class material. As a long-term sub I taught engineering, worked in special education, and taught business education."
       
       - job: "EFL Instructor"
         company: "Plato"
