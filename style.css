@@ -17,26 +17,68 @@ h1 {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 600;
+}
+
+p {
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  text-wrap: pretty;
 }
 
 #header {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 1rem 2rem;
+  grid-template-columns: 1fr;
+  margin: 1rem 2rem 5rem 2rem;
+}
+
+#header p {
+  padding-left: 2em;
 }
 
 .article {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
   margin: 1rem 2rem;
 }
 
-.main-content {
+.about {
   grid-column: 2;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 5px;
 }
 
-.sidepanel {
+.about-text  {
+  display: flex;
+  flex-direction: column;
+  grid-column: 2;
+  text-align: justify;
+}
+
+.about-text p {
+  margin-top: 10px;
+}
+
+.profile {
+  display: flex;
+  grid-column: 1;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  flex-basis: 300px;
+}
+.profile img {
+  width: 300px;
+  border-radius: 50%;
+  margin: 25px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
   grid-column: 3;
+  position: sticky;
+  margin: 0px auto;
 }
