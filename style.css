@@ -1,0 +1,42 @@
+* {
+  margin: 0px;
+  padding: 0px; 
+  border: 0px;
+  font-size: 100%;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  box-sizing: border-box;
+  color: inherit;
+  background-color: inherit;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 1rem 2rem;
+}
+
+.article {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  margin: 1rem 2rem;
+}
+
+.main-content {
+  grid-column: 2;
+}
+
+.sidepanel {
+  grid-column: 3;
+}
