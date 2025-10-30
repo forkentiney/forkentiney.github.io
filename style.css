@@ -133,7 +133,6 @@ p {
   display: flex;
   padding: 1rem;
   flex-direction: column;
-  border: 2px solid var(--neutral);
   grid-column: 3;
   position: sticky;
   top: 11rem;
@@ -157,8 +156,8 @@ p {
 
 .icon {
   margin: 1rem;
-  width: 2rem;
-  height: auto;
+  height: 2rem;
+  width: auto;
 }
 
 .contact {
@@ -170,4 +169,5 @@ p {
 
 .socials {
   display: flex;
+  align-items: center;
 }
