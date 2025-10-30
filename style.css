@@ -48,6 +48,10 @@ p {
   text-wrap: pretty;
 }
 
+em {
+  font-style: italic;
+}
+
 .fade {
   color: var(--font-alt);
   margin-bottom: 1rem;
@@ -64,7 +68,17 @@ p {
 }
 
 #header p {
-  padding-left: 2em;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.titles {
+  grid-column: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
 .article {
@@ -104,7 +118,7 @@ p {
   margin: 25px;
 }
 
-#experience {
+#section-title {
   grid-column: 2;
   margin-top: 5rem;
 }
@@ -114,19 +128,26 @@ p {
   grid-template-columns: 1fr 1fr;
 }
 
+.education {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 .card {
   display: flex;
   flex-direction: column;
   flex-basis: 50%;
+  max-height: 6lh;
+  overflow: auto;
   margin: 1rem;
   padding: 1rem;
   border: 2px solid var(--neutral);
   border-radius: 5px;
 }
 
-.row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.education .card {
+  max-height: none;
 }
 
 .sidebar {
