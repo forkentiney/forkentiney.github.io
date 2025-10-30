@@ -1,6 +1,6 @@
 :root {
   --background-color: #151515;
-  --background-light: #0B141D;
+  --background-light: #060D0F;
   --white: #FFFFFF;
   --font: #FCEFEF;
   --font-alt: #D3C1C3;
@@ -55,6 +55,10 @@ p {
 
 em {
   font-style: italic;
+}
+
+br {
+  margin: 2rem;
 }
 
 .fade {
@@ -122,6 +126,7 @@ em {
 .profile img {
   width: 300px;
   border-radius: 50%;
+  border: 2px solid var(--highlight-two);
   margin: 25px;
 }
 
@@ -160,12 +165,20 @@ em {
 
 .sidebar {
   display: flex;
-  padding: 1rem;
   flex-direction: column;
   grid-column: 3;
   position: sticky;
   top: 11rem;
   margin: 0px auto;
+}
+
+.sidebar a {
+  padding: 5px;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  color: #DB4343;
 }
 
 #footer {
