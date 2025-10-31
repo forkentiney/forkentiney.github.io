@@ -164,7 +164,7 @@ br {
   border-radius: 5px;
 }
 
-.education .card {
+#education .card {
   max-height: none;
 }
 
@@ -228,4 +228,36 @@ br {
 .socials {
   display: flex;
   align-items: center;
+}
+
+.paper {
+  grid-column: 2;
+  display: grid;
+  padding: 2rem 5rem;
+  border: 5px solid var(--highlight);
+  border-radius: 10px;
+  background-color: var(--font);
+}
+
+.cv-section {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0px;
+}
+
+.cv-section p {
+  margin: 0.5rem;
+}
+
+.cv-head {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 2rem;
+}
+
+.cv-head, 
+.cv-head h2,
+.cv-section p,
+.cv-section h3 {
+  color: var(--background-color);
 }
