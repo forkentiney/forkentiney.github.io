@@ -98,10 +98,11 @@ br {
   margin: 5rem 2rem;
 }
 
-.about {
+#about {
   grid-column: 2;
   display: grid;
   grid-template-columns: 1fr 2fr;
+  scroll-margin-top: 216px;
 }
 
 .about-text  {
@@ -123,6 +124,7 @@ br {
   margin: 5px;
   flex-basis: 300px;
 }
+
 .profile img {
   width: 300px;
   border-radius: 50%;
@@ -134,16 +136,19 @@ br {
   grid-column: 2;
   margin-top: 5rem;
 }
-.experience {
+
+#experience {
   grid-column: 2;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  scroll-margin-top: 216px;
 }
 
-.education {
+#education {
   grid-column: 2;
   display: grid;
   grid-template-columns: 1fr;
+  scroll-margin-top: 216px;
 }
 
 .card {
