@@ -261,3 +261,24 @@ br {
 .cv-section h3 {
   color: var(--background-color);
 }
+
+@media (max-width: 1250px) {
+
+  #header, .article {
+    grid-template-columns: 1fr;
+  }
+
+  #header p {
+    display: none;
+  }
+
+  #footer, #header, #about, #experience, #education, #miscellaneous, #section-title, .paper {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar {
+    display: none;
+  }
+}
