@@ -1,0 +1,284 @@
+:root {
+  --background-color: #151515;
+  --background-light: #060D0F;
+  --white: #FFFFFF;
+  --font: #FCEFEF;
+  --font-alt: #D3C1C3;
+  --neutral: #3C6997;
+  --highlight: #8AC6D0;
+  --highlight-two: #F8DDDD;
+}
+
+* {
+  margin: 0px;
+  padding: 0px; 
+  border: 0px;
+  font-size: 100%;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  box-sizing: border-box;
+  color: inherit;
+  background-color: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+  color: var(--font);
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--highlight);
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  text-wrap: pretty;
+}
+
+em {
+  font-style: italic;
+}
+
+br {
+  margin: 2rem;
+}
+
+.fade {
+  color: var(--font-alt);
+  margin-bottom: 1rem;
+}
+
+#header {
+  color: var(--highlight);
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 2rem;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(50px);
+  background-color: transparent;
+}
+
+#header p {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: var(--highlight-two);
+}
+
+.titles {
+  grid-column: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.article {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  margin: 5rem 2rem;
+}
+
+#about {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  scroll-margin-top: 216px;
+}
+
+.about-text  {
+  display: flex;
+  flex-direction: column;
+  grid-column: 2;
+  text-align: justify;
+}
+
+.about-text p {
+  margin-top: 10px;
+}
+
+.profile {
+  display: flex;
+  grid-column: 1;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  flex-basis: 300px;
+}
+
+.profile img {
+  width: 300px;
+  border-radius: 50%;
+  border: 2px solid var(--highlight-two);
+  margin: 25px;
+}
+
+#section-title {
+  grid-column: 2;
+  margin-top: 5rem;
+}
+
+#experience {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  scroll-margin-top: 216px;
+}
+
+#education {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  scroll-margin-top: 216px;
+}
+
+.card {
+  background-color: var(--background-light);
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  max-height: 6lh;
+  overflow: auto;
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid var(--neutral);
+  border-radius: 5px;
+}
+
+#education .card {
+  max-height: none;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  grid-column: 3;
+  position: sticky;
+  top: 11rem;
+  margin: 0px auto;
+}
+
+.sidebar a {
+  padding: 5px;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  color: #DB4343;
+}
+
+#footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto 2rem 1rem 2rem;
+}
+
+.license {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.credit {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.license a,
+.icon {
+  margin: 1rem;
+  height: 2rem;
+  width: auto;
+}
+
+.contact {
+  grid-column: 3;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: center;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+}
+
+.paper {
+  grid-column: 2;
+  display: grid;
+  padding: 2rem 5rem;
+  border: 5px solid var(--highlight);
+  border-radius: 10px;
+  background-color: var(--font);
+}
+
+.cv-section {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0px;
+}
+
+.cv-section p {
+  margin: 0.5rem;
+}
+
+.cv-head {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 2rem;
+}
+
+.cv-head, 
+.cv-head h2,
+.cv-section p,
+.cv-section h3 {
+  color: var(--background-color);
+}
+
+@media (max-width: 1250px) {
+
+  #header, .article {
+    grid-template-columns: 1fr;
+  }
+
+  #header p {
+    display: none;
+  }
+
+  #footer, #header, #about, #experience, #education, #miscellaneous, #section-title, .paper {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar {
+    display: none;
+  }
+}
