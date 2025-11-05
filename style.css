@@ -262,6 +262,13 @@ br {
   color: var(--background-color);
 }
 
+#thesis {
+  display: flex;
+  flex-direction: column;
+  grid-column: 2;
+  text-align: justify;
+}
+
 @media (max-width: 1250px) {
 
   #header, .article {
