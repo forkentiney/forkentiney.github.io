@@ -107,11 +107,14 @@ br {
   margin: 5rem 2rem;
 }
 
+#about, #experience, #education, #miscellaneous, #abstract, #introduction, #chapter-one, #chapter-two, #chapter-three, #bibliography, #vita {
+  scroll-margin-top: 216px;
+}
+
 #about {
   grid-column: 2;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  scroll-margin-top: 216px;
 }
 
 #thesis p, .about-text  {
@@ -146,14 +149,12 @@ br {
   grid-column: 2;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  scroll-margin-top: 216px;
 }
 
 #education {
   grid-column: 2;
   display: grid;
   grid-template-columns: 1fr;
-  scroll-margin-top: 216px;
 }
 
 .card {
