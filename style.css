@@ -23,27 +23,30 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   background-color: var(--background-color);
   color: var(--font);
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 3rem;
   font-weight: 800;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: 600;
   color: var(--highlight);
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: 600;
   color: var(--white);
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
 p {
@@ -51,6 +54,7 @@ p {
   line-height: 1.5;
   overflow-wrap: break-word;
   text-wrap: pretty;
+  margin: 10px 0px;
 }
 
 em {
@@ -59,6 +63,11 @@ em {
 
 br {
   margin: 2rem;
+}
+
+.viewport {
+  display: flex;
+  flex-direction: column;
 }
 
 .fade {
@@ -105,15 +114,11 @@ br {
   scroll-margin-top: 216px;
 }
 
-.about-text  {
+#thesis p, .about-text  {
   display: flex;
   flex-direction: column;
   grid-column: 2;
   text-align: justify;
-}
-
-.about-text p {
-  margin-top: 10px;
 }
 
 .profile {
@@ -172,9 +177,13 @@ br {
   display: flex;
   flex-direction: column;
   grid-column: 3;
+  align-self: start;
   position: sticky;
   top: 11rem;
   margin: 0px auto;
+  padding: 1rem;
+  background-color: transparent;
+  grid-row: 1;
 }
 
 .sidebar a {
@@ -188,8 +197,8 @@ br {
 
 #footer {
   display: grid;
+  justify-content: flex-end;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: auto 2rem 1rem 2rem;
 }
 
 .license {
@@ -262,6 +271,42 @@ br {
   color: var(--background-color);
 }
 
+#thesis {
+  display: flex;
+  flex-direction: column;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#thesis h1, #subtitle, #thesis-credit {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem auto;
+}
+
+#thesis h1, #thesis h2, #thesis h3, #thesis h4 {
+  color: var(--font);
+}
+
+#subtitle p {
+  margin: 0px;
+}
+
+#thesis h2 {
+  margin-top: 2rem;
+}
+
+.hanging {
+  padding-left: 0.5in;
+  text-indent: -0.5in;
+}
+
+.hanging p {
+  margin: 2rem 0px;
+}
+
 @media (max-width: 1250px) {
 
   #header, .article {
@@ -272,10 +317,14 @@ br {
     display: none;
   }
 
-  #footer, #header, #about, #experience, #education, #miscellaneous, #section-title {
+  #thesis, #footer, #header, #about, #experience, #education, #miscellaneous, #section-title {
     grid-column: 1;
     display: flex;
     flex-direction: column;
+  }
+
+  #thesis h1 {
+    font-size: 2rem;
   }
  
   .paper, .sidebar {
