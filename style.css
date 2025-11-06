@@ -275,10 +275,9 @@ br {
   display: flex;
   flex-direction: column;
   grid-column: 2;
-  grid-row: 1;
 }
 
-#thesis h1, #subtitle, #thesis-credit {
+#thesis h1, #subtitle, #subtitle p {
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -316,8 +315,15 @@ br {
   #header p {
     display: none;
   }
+ 
+  .paper, .sidebar {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    position: static;
+  }
 
-  #thesis, #footer, #header, #about, #experience, #education, #miscellaneous, #section-title {
+  #thesis, #subtitle, #footer, #header, #about, #experience, #education, #miscellaneous, #section-title {
     grid-column: 1;
     display: flex;
     flex-direction: column;
@@ -325,13 +331,6 @@ br {
 
   #thesis h1 {
     font-size: 2rem;
-  }
- 
-  .paper, .sidebar {
-    grid-column: 1;
-    display: flex;
-    flex-direction: column;
-    position: static;
   }
 
   .paper {
