@@ -65,6 +65,14 @@ br {
   margin: 2rem;
 }
 
+ol {
+  list-style-position: inside;
+}
+
+li {
+  padding: 1rem 0px;
+}
+
 .viewport {
   display: flex;
   flex-direction: column;
@@ -175,10 +183,8 @@ br {
   max-height: none;
 }
 
-.sidebar {
-  display: flex;
+.sidebar, .footnotes {
   flex-direction: column;
-  grid-column: 3;
   align-self: start;
   position: sticky;
   top: 11rem;
@@ -186,6 +192,32 @@ br {
   padding: 1rem;
   background-color: transparent;
   grid-row: 1;
+}
+
+.sidebar {
+  display: flex;
+  grid-column: 3;
+}
+
+.footnotes {
+  display: flex;
+  border: solid 2px var(--highlight-two);
+  border-radius: 10px;
+  margin: 1rem;
+  grid-column: 1;
+  height: 75vh;
+  overflow: auto;
+}
+
+.footnotes ol {
+  font-size: 95%;
+}
+
+.notes {
+  font-size: 90%;
+  text-decoration: underline;
+  vertical-align: super;
+  color: var(--font-alt);
 }
 
 .sidebar a {
@@ -302,10 +334,12 @@ br {
 .hanging {
   padding-left: 0.5in;
   text-indent: -0.5in;
+  display: flex;
+  flex-direction: column;
 }
 
-.hanging p {
-  margin: 2rem 0px;
+#thesis p, #thesis span {
+  display: inline;
 }
 
 @media (max-width: 1250px) {
