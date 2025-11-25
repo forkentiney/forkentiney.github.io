@@ -1,4 +1,14 @@
 :root {
+  --bg-dark: hsl(240 9% 13%);
+  --text: hsl(240 10% 94%);
+  --bg-light: hsl(240 9% 26%);
+  --text-muted: hsl(240 10% 35%);
+  --primary: hsl(224 38% 55%);
+  --secondary: hsl(224 38% 70%);
+  --danger: hsl(0 75% 60%);
+  --warning: hsl(23 100% 63%);
+  --success: hsl(98 42% 42%);
+
   --background-color: #151515;
   --background-light: #060D0F;
   --white: #FFFFFF;
@@ -23,7 +33,7 @@
 }
 
 body {
-  background-color: var(--background-color);
+  background-color: var(--bg-dark);
   color: var(--font);
 }
 
@@ -35,13 +45,13 @@ h1 {
 h2 {
   font-size: 2rem;
   font-weight: 600;
-  color: var(--highlight);
+  color: var(--primary);
 }
 
 h3 {
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--white);
+  color: var(--text);
 }
 
 h4 {
@@ -83,12 +93,12 @@ a {
 }
 
 .fade {
-  color: var(--font-alt);
+  color: var(--text-muted);
   margin-bottom: 1rem;
 }
 
 #header, .navigation {
-  color: var(--highlight);
+  color: var(--primary);
   display: grid;
   grid-template-columns: 1fr;
   padding: 2rem;
@@ -105,7 +115,7 @@ a {
 #header p {
   padding-left: 2rem;
   padding-right: 2rem;
-  color: var(--highlight-two);
+  color: var(--secondary);
 }
 
 .titles {
@@ -122,7 +132,7 @@ a {
   gap: 10vw;
   justify-content: center;
   align-items: center;
-  color: var(--font-alt);
+  color: var(--text-muted);
   font-size: 1.5rem;
 }
 
@@ -161,7 +171,7 @@ a {
 .profile img {
   width: 300px;
   border-radius: 50%;
-  border: 2px solid var(--highlight-two);
+  border: 2px solid var(--secondary);
   margin: 25px;
 }
 
@@ -183,7 +193,7 @@ a {
 }
 
 .card {
-  background-color: var(--background-light);
+  background-color: var(--bg-light);
   display: flex;
   flex-direction: column;
   flex-basis: 50%;
@@ -191,7 +201,7 @@ a {
   overflow: auto;
   margin: 1rem;
   padding: 1rem;
-  border: 2px solid var(--neutral);
+  border: 2px solid var(--secondary);
   border-radius: 5px;
 }
 
@@ -217,7 +227,7 @@ a {
 
 .footnotes {
   display: flex;
-  border: solid 2px var(--highlight-two);
+  border: solid 2px var(--secondary);
   border-radius: 10px;
   margin: 1rem;
   grid-column: 1;
@@ -233,7 +243,7 @@ a {
   font-size: 90%;
   text-decoration: underline;
   vertical-align: super;
-  color: var(--font-alt);
+  color: var(--text-muted);
 }
 
 .sidebar a {
@@ -293,9 +303,9 @@ a {
   grid-column: 2;
   display: grid;
   padding: 2rem 5rem;
-  border: 5px solid var(--highlight);
+  border: 5px solid var(--primary);
   border-radius: 10px;
-  background-color: var(--font);
+  background-color: var(--text);
 }
 
 .cv-section {
@@ -318,7 +328,7 @@ a {
 .cv-head h2,
 .cv-section p,
 .cv-section h3 {
-  color: var(--background-color);
+  color: var(--bg-dark);
 }
 
 #thesis {
@@ -336,7 +346,7 @@ a {
 }
 
 #thesis h1, #thesis h2, #thesis h3, #thesis h4 {
-  color: var(--font);
+  color: var(--text);
 }
 
 #subtitle p {
@@ -396,7 +406,7 @@ a {
   .sidebar, .footnotes {
     display: none;
     margin: 2rem auto;
-    border: 2px solid var(--highlight-two);
+    border: 2px solid var(--secondary);
     border-radius: 5px;
     padding: 1rem;
   }
