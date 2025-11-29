@@ -27,6 +27,11 @@
 
 body {
   background-color: var(--bg-dark);
+  font-size: 18px;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  text-wrap: pretty;
+  color: var(--text);
 }
 
 h1, h2, h3, h4 {
@@ -54,12 +59,6 @@ h4 {
 }
 
 p {
-  font-size: 18px;
-  line-height: 1.5;
-  overflow-wrap: break-word;
-  text-wrap: pretty;
-  margin: 10px 0px;
-  color: var(--text);
 }
 
 em {
@@ -135,6 +134,10 @@ a {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   margin: 0 16px;
+}
+
+.article p {
+  margin: 10px 0px;
 }
 
 #about, #experience, #education, #miscellaneous, #abstract, #introduction, #chapter-one, #chapter-two, #chapter-three, #bibliography, #vita {
