@@ -100,10 +100,10 @@ a {
   background-image: linear-gradient(180deg, var(--bg-light) 0%, var(--bg-dark) 90%);
   background-color: transparent;
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 1.5fr 1.5fr 1fr;
   align-items: center;
   justify-content: space-evenly;
-  padding: 8px 64px;
+  padding: 8px 16px;
   margin-bottom: 64px;
   position: sticky;
   top: 0;
@@ -117,15 +117,20 @@ a {
 
 #title {
   display: flex;
-  justify-content: center;
+  grid-column: 2;
+  justify-content: flex-start;
   align-items: center;
+}
+
+#title a {
+  font-weight: 900;
 }
 
 .navigation {
   display: flex;
   justify-content: right;
   align-items: center;
-  gap: 24px;
+  gap: 48px;
   color: var(--text-muted);
   font-size: 20px;
 }
