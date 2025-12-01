@@ -152,7 +152,7 @@ a {
   grid-column: 2;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  height: 100vh;
+  min-height: 100vh;
   padding-bottom: 30vh;
 }
 
@@ -358,7 +358,7 @@ a {
 }
 
 #titlePage {
-  height: 95vh;
+  min-height: 95vh;
   justify-content: space-evenly;
 }
 
