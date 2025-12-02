@@ -202,7 +202,6 @@ li {
   display: flex;
   flex-direction: column;
   flex-basis: 50%;
-  max-height: 6lh;
   overflow: auto;
   margin: 1rem;
   padding: 1rem;
@@ -379,14 +378,26 @@ li {
   display: none;
 }
 
-.ascii {
+.portfolio {
+  display: flex;
+  grid-column: 2;
+  flex-direction: column;
+}
+
+.portfolio a {
   display: flex;
   flex-direction: column;
-  white-space: pre;
-  font-size: 10px;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  align-items: center;
+  flex-basis: 400px;
+  min-height: 450px;
+  text-decoration: none;
+}
+
+.pieces {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 1250px) {
@@ -410,7 +421,7 @@ li {
     position: static;
   }
 
-  #thesis, #titlePage, #footer, #header, #about, #experience, #education, #miscellaneous, #section-title {
+  .portfolio, #thesis, #titlePage, #footer, #header, #about, #experience, #education, #miscellaneous, #section-title {
     grid-column: 1;
     display: flex;
     flex-direction: column;
