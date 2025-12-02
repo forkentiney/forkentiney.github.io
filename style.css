@@ -382,6 +382,9 @@ li {
   display: flex;
   grid-column: 2;
   flex-direction: column;
+  margin-top: 96px;
+  justify-content: center;
+  text-align: justify;
 }
 
 .portfolio a {
@@ -401,15 +404,18 @@ li {
 }
 
 .card iframe {
-  height: 400px;
-  width: 350px;
+  height: 100%;
+  width: 100%;
   border-radius: 12px;
   border: 1px solid var(--text);
   margin-top: 12px;
 }
 
 .card div {
+  height: 100%;
+  width: 100%;
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
