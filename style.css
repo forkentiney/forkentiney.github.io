@@ -58,9 +58,6 @@ h4 {
   font-weight: 600;
 }
 
-p {
-}
-
 em {
   font-style: italic;
 }
@@ -75,10 +72,6 @@ ol {
 
 li {
   padding: 1rem 0px;
-}
-
-a {
-  color: var(--text);
 }
 
 .shadow {
@@ -112,6 +105,11 @@ a {
 
 #header a {
   text-decoration: none;
+  font-weight: 100;
+}
+
+#header.navigation a {
+  font-weight: 100;
 }
 
 #title {
@@ -204,7 +202,6 @@ a {
   display: flex;
   flex-direction: column;
   flex-basis: 50%;
-  max-height: 6lh;
   overflow: auto;
   margin: 1rem;
   padding: 1rem;
@@ -381,6 +378,49 @@ a {
   display: none;
 }
 
+.portfolio {
+  display: flex;
+  grid-column: 2;
+  flex-direction: column;
+  margin-top: 96px;
+  justify-content: center;
+  text-align: justify;
+}
+
+.portfolio a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 400px;
+  min-height: 450px;
+  text-decoration: none;
+}
+
+.pieces {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card iframe {
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--text);
+  margin-top: 12px;
+}
+
+.card div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 1250px) {
 
   #header, .article {
@@ -402,7 +442,7 @@ a {
     position: static;
   }
 
-  #thesis, #titlePage, #footer, #header, #about, #experience, #education, #miscellaneous, #section-title {
+  .portfolio, #thesis, #titlePage, #footer, #header, #about, #experience, #education, #miscellaneous, #section-title {
     grid-column: 1;
     display: flex;
     flex-direction: column;
