@@ -400,6 +400,21 @@ li {
   flex-wrap: wrap;
 }
 
+.card iframe {
+  height: 400px;
+  width: 350px;
+  border-radius: 12px;
+  border: 1px solid var(--text);
+  margin-top: 12px;
+}
+
+.card div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 1250px) {
 
   #header, .article {
