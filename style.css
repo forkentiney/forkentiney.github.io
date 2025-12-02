@@ -58,9 +58,6 @@ h4 {
   font-weight: 600;
 }
 
-p {
-}
-
 em {
   font-style: italic;
 }
@@ -75,10 +72,6 @@ ol {
 
 li {
   padding: 1rem 0px;
-}
-
-a {
-  color: var(--text);
 }
 
 .shadow {
@@ -112,6 +105,11 @@ a {
 
 #header a {
   text-decoration: none;
+  font-weight: 100;
+}
+
+#header.navigation a {
+  font-weight: 100;
 }
 
 #title {
@@ -379,6 +377,16 @@ a {
 
 .hidden {
   display: none;
+}
+
+.ascii {
+  display: flex;
+  flex-direction: column;
+  white-space: pre;
+  font-size: 10px;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 @media (max-width: 1250px) {
