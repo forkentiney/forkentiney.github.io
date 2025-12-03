@@ -68,10 +68,11 @@ br {
 
 ol {
   list-style-position: inside;
+  list-style-type: none;
 }
 
 li {
-  padding: 1rem 0px;
+  padding: 4px 0px;
 }
 
 .shadow {
@@ -135,7 +136,6 @@ li {
 .article {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
-  margin: 0 16px;
 }
 
 .article p {
@@ -213,46 +213,40 @@ li {
   max-height: none;
 }
 
-.sidebar, .footnotes {
-  flex-direction: column;
-  align-self: start;
-  position: sticky;
-  top: 11rem;
-  margin: 0px auto;
-  padding: 1rem;
-  background-color: transparent;
-  grid-row: 1;
-}
-
-.sidebar {
+.close {
   display: flex;
-  grid-column: 3;
+  justify-content: center;
+  margin-left: auto;
+  position: sticky;
+  top: 0;
+  flex-shrink: 0;
+  border-radius: 100%;
 }
 
 .footnotes {
   display: flex;
-  border: solid 2px var(--secondary);
-  border-radius: 10px;
-  margin: 1rem;
-  grid-column: 1;
-  height: 75vh;
+  flex-direction: row;
+  max-height: 128px;
+  position: sticky;
+  bottom: 0;
+  margin: 0px auto;
+  padding: 8px 128px;
+  background-color: var(--bg-light);
+  border-top: solid 2px var(--primary);
+  margin: 0;
+  grid-column: 1 / 4;
   overflow: auto;
 }
 
 .footnotes ol {
-  font-size: 95%;
+  font-size: 16px;
 }
 
-.notes {
+.marker {
   font-size: 90%;
   text-decoration: underline;
   vertical-align: super;
   color: var(--text-muted);
-}
-
-.sidebar a {
-  padding: 5px;
-  text-decoration: none;
 }
 
 .navigation a:hover {
@@ -290,6 +284,12 @@ li {
   margin: 1rem;
   height: 2rem;
   width: auto;
+}
+
+.close .icon {
+  height: 24px;
+  width: auto;
+  color: var(--danger);
 }
 
 .contact {
@@ -370,7 +370,7 @@ li {
   flex-direction: column;
 }
 
-#thesis p, #thesis span {
+#thesis p, #thesis button {
   display: inline;
 }
 
@@ -435,10 +435,9 @@ li {
     display: none;
   }
  
-  .paper, .sidebar, .footnotes {
+  .footnotes {
     grid-column: 1;
-    display: flex;
-    flex-direction: column;
+    display: none;
     position: static;
   }
 
@@ -446,6 +445,7 @@ li {
     grid-column: 1;
     display: flex;
     flex-direction: column;
+    padding: 8px;
   }
 
   #thesis h1 {
@@ -453,14 +453,6 @@ li {
   }
 
   .paper {
-    padding: 1rem;
-  }
-
-  .sidebar, .footnotes {
-    display: none;
-    margin: 2rem auto;
-    border: 2px solid var(--secondary);
-    border-radius: 5px;
     padding: 1rem;
   }
 
