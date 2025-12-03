@@ -220,7 +220,7 @@ li {
   position: sticky;
   top: 0;
   flex-shrink: 0;
-  font-size: 12px;
+  border-radius: 100%;
 }
 
 .footnotes {
@@ -239,8 +239,7 @@ li {
 }
 
 .footnotes ol {
-  font-size: 95%;
-  grid-column: 2;
+  font-size: 16px;
 }
 
 .marker {
@@ -438,7 +437,7 @@ li {
  
   .footnotes {
     grid-column: 1;
-    display: flex;
+    display: none;
     position: static;
   }
 
