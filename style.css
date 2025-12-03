@@ -68,6 +68,7 @@ br {
 
 ol {
   list-style-position: inside;
+  list-style-type: none;
 }
 
 li {
@@ -243,7 +244,7 @@ li {
   font-size: 95%;
 }
 
-.notes {
+.marker {
   font-size: 90%;
   text-decoration: underline;
   vertical-align: super;
@@ -370,7 +371,7 @@ li {
   flex-direction: column;
 }
 
-#thesis p, #thesis span {
+#thesis p, #thesis button {
   display: inline;
 }
 
