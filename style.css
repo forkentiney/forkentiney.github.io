@@ -226,7 +226,7 @@ li {
 .footnotes {
   display: flex;
   flex-direction: row;
-  max-height: 128px;
+  max-height: 25vh;
   position: sticky;
   bottom: 0;
   margin: 0px auto;
