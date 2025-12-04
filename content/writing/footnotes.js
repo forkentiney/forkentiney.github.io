@@ -14,4 +14,9 @@ markers.forEach((marker) => {
 
 close.addEventListener("click", () => {
   notesFooter.classList.add("hidden");
-})
+  markers.forEach((marker) => {
+    let i = marker.getAttribute("id");
+    let footnote=document.getElementById(`foot${i}`);
+    footnote.classList.add("hidden");
+  });
+});
