@@ -436,9 +436,8 @@ li {
   }
  
   .footnotes {
-    grid-column: 1;
-    display: none;
-    position: static;
+    max-height: 75vh;
+    padding: 8px;
   }
 
   .portfolio, #thesis, #titlePage, #footer, #header, #about, #experience, #education, #miscellaneous, #section-title {
