@@ -82,6 +82,8 @@ li {
 .viewport {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
 }
 
 .fade {
@@ -136,6 +138,7 @@ li {
 .article {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
+  margin: 48px 0;
 }
 
 .article p {
@@ -150,8 +153,6 @@ li {
   grid-column: 2;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  min-height: 100vh;
-  padding-bottom: 30vh;
 }
 
 #thesis p, .about-text  {
@@ -258,7 +259,6 @@ li {
   justify-content: flex-end;
   grid-template-columns: 1fr 1fr 1fr;
   font-size: 14px;
-  margin-top: 64px;
 }
 
 .license {
