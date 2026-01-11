@@ -9,7 +9,7 @@
   --secondary: hsl(224 38% 70%);
   --danger: hsl(0 75% 60%);
   --warning: hsl(23 100% 63%);
-  --success: hsl(98 42% 42%);
+  --success: hsl(98 42% 32%);
 }
 
 * {
@@ -75,8 +75,24 @@ li {
   padding: 4px 0px;
 }
 
+.button {
+  display: flex;
+  padding: 12px 16px;
+  background-color: var(--bg-light);
+  border: 2px solid var(--secondary);
+  border-radius: 16px;
+  box-shadow: 0px 4px 12px var(--shadow);
+  text-decoration: none;
+  user-select: none;
+}
+
+.button:hover {
+  background-color: var(--primary);
+  box-shadow: 0px 12px 12px var(--shadow);
+}
+
 .shadow {
-  box-shadow: 0px 8px 12px black;
+  box-shadow: 0px 8px 12px var(--shadow);
 }
 
 .viewport {
@@ -166,6 +182,7 @@ li {
 
 .profile {
   display: flex;
+  flex-direction: column;
   grid-column: 1;
   justify-content: center;
   align-items: center;
