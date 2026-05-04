@@ -174,6 +174,25 @@ li {
   grid-template-columns: 1fr 2fr;
 }
 
+#weather-container {
+	z-index: 4;
+	display: flex;
+	flex-direction: column;
+	align-self: flex-end;
+	align-items: flex-end;
+	margin-right: 5vw;
+	margin-bottom: -72px;
+	padding: 8px;
+	font-size: 16px;
+	border: 2px solid var(--shadow);
+	border-radius: 12px;
+	box-shadow: 4px 4px 4px var(--shadow);
+	background-color: var(--bg-light);
+	p {
+		font-style: italic;
+	}
+}
+
 #thesis p, .about-text  {
   display: flex;
   flex-direction: column;
@@ -490,4 +509,8 @@ li {
     position: sticky;
     top: 0;
   }
+
+	#weather-container {
+		margin: 2em 1em;
+	}
 }
