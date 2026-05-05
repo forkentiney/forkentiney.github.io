@@ -1,0 +1,38 @@
+{
+  "name": "forkentiney.github.io",
+  "version": "1.0.0",
+  "description": "Personal website for CV and introductions. Made from scratch.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack serve",
+    "deploy": "git subtree push --prefix dist origin gh-pages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forkentiney/forkentiney.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/forkentiney/forkentiney.github.io/issues"
+  },
+  "homepage": "https://github.com/forkentiney/forkentiney.github.io#readme",
+  "devDependencies": {
+    "css-loader": "^7.1.4",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.7",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.106.2",
+    "webpack-cli": "^7.0.2",
+    "webpack-dev-server": "^5.2.3",
+    "webpack-merge": "^6.0.1"
+  },
+	"scripts": {
+		"build": "webpack --config webpack.prod.js",
+		"dev": "webpack serve --config webpack.dev.js",
+		"deploy": "git subtree push --prefix dist origin pages"
+	}
+}
