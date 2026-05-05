@@ -1,15 +1,24 @@
 :root {
-  --bg-dark: hsl(240 9% 13%);
-  --shadow: hsl(240 9% 5%);
-  --text: hsl(240 10% 94%);
-  --titles: hsl(240 10% 100%);
-  --bg-light: hsl(240 9% 26%);
-  --text-muted: hsl(240 10% 80%);
-  --primary: hsl(224 38% 55%);
-  --secondary: hsl(224 38% 70%);
-  --danger: hsl(0 75% 60%);
-  --warning: hsl(23 100% 63%);
-  --success: hsl(98 42% 32%);
+	/* Colours by Catppuccin */
+	--bg-pane: hsl(240 21% 15%); 
+	--pane-light: hsl(240 21% 12%);
+	--pane-dark: hsl(240 23% 9%);
+	--surface-light: hsl(233 12% 39%);
+	--surface-medium: hsl(234 13% 31%);
+	--surface-dark: hsl(237 16% 23%);
+	--overlay-light: hsl(228 17% 64%);
+	--overlay-medium: hsl(230 13% 55%);
+	--overlay-dark: hsl(231 11% 47%);
+	--text: hsl(226 64% 88%);
+	--subtext-light: hsl(227 35% 80%);
+	--subtext-dark: hsl(228 24% 72%);
+	--subtitle: hsl(230 13% 55%);
+	--blue: hsl(217 92% 76%);
+	--green: hsl(115 54% 76%);
+	--yellow: hsl(41 86% 83%);
+	--red: hsl(343 81% 75%);
+	--primary: hsl(199 76% 69%);
+	--secondary: hsl(267 84% 81%);
 }
 
 * {
@@ -28,7 +37,7 @@
 body {
   display: flex;
   flex-direction: column;
-  background-color: var(--bg-dark);
+  background-color: var(--bg-pane);
   font-size: 18px;
   line-height: 1.5;
   overflow-wrap: break-word;
@@ -40,12 +49,16 @@ h1,
 h2,
 h3,
 h4 {
-  color: var(--titles);
+  color: var(--text);
 }
 
 h1 {
   font-size: 36px;
   font-weight: 900;
+}
+
+a {
+	color: var(--blue);
 }
 
 em {
@@ -54,22 +67,72 @@ em {
 
 header {
   z-index: 10;
+	background-color: var(--pane-light);
+	min-height: 6em;
+	box-shadow: 0px 8px 12px var(--pane-dark);
+	display: flex;
+	justify-content: space-between;	
+	padding: 0 2em;
+	border-bottom: 2px solid var(--yellow);
 }
 
-.hidden {
-  display: none;
+#body {
+	min-height: 95vh;
+}
+
+.flex-centered {
+	display: flex;
+	flex-direction: column;
+	jusitfy-content: center;
+	align-items: center;
+}
+
+.flex-centered-row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#navigation {
+	gap: clamp(4px, 4em, 6em);
+	font-size: 20px;
+}
+
+button {
+	font-weight: 500;
+	padding: 24px 12px;
+}
+
+header h1:hover {
+	color: var(--primary);
+}
+
+#navigation button:hover {
+	color: var(--secondary);
+}
+
+.icon {
+	height: 2em;
+	width: auto;
+	margin: 1em 4px;
 }
 
 footer {
+	z-index: 10;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+	gap: 1em;
   font-size: 14px;
+	min-height: 8em;
+	background-color: var(--pane-light);
+	box-shadow: 0px -8px 8px var(--pane-dark);
 }
 
 #license,
 #credit,
 #contact {
 	grid-row: 1;
+	justify-content: center;
 }
 
 #license {
@@ -86,6 +149,11 @@ footer {
 
 #socials {
   display: flex;
+	gap: clamp(2px, 2em, 5vw);
+}
+
+.hidden {
+  display: none;
 }
 
 @media (max-width: 800px) {
