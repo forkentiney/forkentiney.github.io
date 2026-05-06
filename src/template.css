@@ -72,9 +72,9 @@ header {
 	box-shadow: 0px 8px 12px var(--pane-dark);
 	display: flex;
 	justify-content: space-between;	
-	padding: 0 2em;
-	border-bottom: 2px solid var(--yellow);
 	flex-wrap: wrap;
+	padding: 0 2vw;
+	border-bottom: 2px solid var(--yellow);
 }
 
 #body {
@@ -101,8 +101,7 @@ header {
 
 #navigation {
 	gap: clamp(4px, 10vw, 6em);
-	font-size: 20px;
-	flex-wrap: wrap;
+	font-size: clamp(16px, 2.5vw, 20px);
 }
 
 button {
@@ -165,6 +164,10 @@ footer {
 }
 
 @media (max-width: 800px) {
+
+	header {
+		justify-content: center;
+	}
 
 	footer {
 		grid-template-columns: 1fr;
