@@ -57,6 +57,17 @@ h1 {
   font-weight: 900;
 }
 
+h2 {
+	font-size: 32px;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 20px;
+	font-weight: 700;
+	color: var(--subtext-dark);
+}
+
 a {
 	color: var(--blue);
 }
@@ -131,7 +142,7 @@ footer {
   font-size: 14px;
 	min-height: 8em;
 	background-color: var(--pane-light);
-	box-shadow: 0px -8px 8px var(--pane-dark);
+	box-shadow: 0px -4px 24px var(--pane-dark);
 	border-top: 2px solid var(--overlay-light);
 }
 
