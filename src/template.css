@@ -74,10 +74,16 @@ header {
 	justify-content: space-between;	
 	padding: 0 2em;
 	border-bottom: 2px solid var(--yellow);
+	flex-wrap: wrap;
 }
 
 #body {
+	display: flex;
+	flex-direction: column;
 	min-height: 95vh;
+	margin: 4em 0;
+	padding: 0 max(8px, 5%);
+	
 }
 
 .flex-centered {
@@ -94,8 +100,9 @@ header {
 }
 
 #navigation {
-	gap: clamp(4px, 4em, 6em);
+	gap: clamp(4px, 10vw, 6em);
 	font-size: 20px;
+	flex-wrap: wrap;
 }
 
 button {
@@ -126,6 +133,7 @@ footer {
 	min-height: 8em;
 	background-color: var(--pane-light);
 	box-shadow: 0px -8px 8px var(--pane-dark);
+	border-top: 2px solid var(--overlay-light);
 }
 
 #license,
@@ -158,17 +166,13 @@ footer {
 
 @media (max-width: 800px) {
 
-  header {
-    position: static;
-  }
-
 	footer {
 		grid-template-columns: 1fr;
 	}
 
 	#license,
 	#credit,
-	#socials {
+	#contact {
 		grid-column: 1;
 	}
 
@@ -176,7 +180,7 @@ footer {
 		grid-row: 1;
 	}
 
-	#socials {
+	#contact {
 		grid-row: 2;
 	}
 
