@@ -150,6 +150,10 @@
 	}
 }
 
+.card + .card {
+	margin-top: 2em;
+}
+
 @media (max-width: 800px) {
 	#about-summary p {
 		width: 95vw;
