@@ -17,7 +17,7 @@
 	--green: hsl(115 54% 76%);
 	--yellow: hsl(41 86% 83%);
 	--red: hsl(343 81% 75%);
-	--primary: hsl(199 76% 69%);
+	--primary: hsl(23 92% 75%);
 	--secondary: hsl(267 84% 81%);
 }
 
@@ -68,6 +68,12 @@ h3 {
 	color: var(--subtext-dark);
 }
 
+h4 {
+	font-size: 18px;
+	font-weight: 700;
+	color: var(--pane-light);
+}
+
 a {
 	color: var(--blue);
 }
@@ -85,7 +91,7 @@ header {
 	justify-content: space-between;	
 	flex-wrap: wrap;
 	padding: 0 2vw;
-	border-bottom: 2px solid var(--yellow);
+	border-bottom: 2px solid var(--primary);
 }
 
 #body {
@@ -94,7 +100,10 @@ header {
 	min-height: 95vh;
 	margin: 4em 0;
 	padding: 0 max(8px, 5%);
-	
+}
+
+#body > div + div {
+	margin-top: 8rem;
 }
 
 .flex-centered {
@@ -125,7 +134,7 @@ header h1:hover {
 }
 
 #navigation button:hover {
-	color: var(--secondary);
+	color: var(--primary);
 }
 
 .icon {
