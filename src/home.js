@@ -1,6 +1,12 @@
 import "./home.css";
 import joshuaPic from "./static/images/profile.webp";
 import rightArrow from "./static/images/icons/right-arrow.svg";
+const createTeaching = () => {
+	console.log("Creating Teaching page");
+};
+function createWebdev() {
+	console.log("Creating Webdev page");
+};
 
 const visualCrossingKey = "LJVZ5T9ETAKSGFVR8K9ZHY69P"
 
@@ -18,18 +24,28 @@ const batonRouge = createLocation("Baton Rouge, Louisiana", "I studied philosoph
 const seoul = createLocation("Seoul, South Korea", "In Seoul I taught English to a wide range of students aged from kindergarten to retirees. The weather went to extremes that my body was not used to, but I enjoyed how easy it was to move around and was impressed by the metro system. I don't think I would choose to live in such a large city again, however.");
 const locations = [seoul, grandForks, lyon, batonRouge,];
 
-function createEndeavour(name, subname, details, subnameTwo, detailsTwo) {
+function createEndeavour(name, goto, subname, details, subnameTwo, detailsTwo) {
 	const title = name;
 	const subtitle = subname;
 	const description = details;
 	const subtitle2 = subnameTwo;
 	const description2 = detailsTwo;
+	let button;
+	if (typeof goto === "string") {
+		button = document.createElement("a");
+		button.classList.add("button");
+		button.setAttribute("href", goto);
+		button.setAttribute("target", "_blank");
+	} else {
+		button = document.createElement("button");
+		button.addEventListener("click", goto);
+	};
 
-	return { title, subtitle, description, subtitle2, description2 };
+	return { title, subtitle, description, subtitle2, description2, button };
 };
-const teaching = createEndeavour("Teaching", "Grand Forks Public Schools", "As a substitute teacher I cover many different subjects including at one point as an English teacher for an entire semester.", "Minot State University", "As an adjunct lecturer I teach philosophy online.");
-const webdev = createEndeavour("Web Development", "HTML, CSS, JavaScript", "I'm still learning, but I'm moving at break-neck speed.");
-const farmersMarket = createEndeavour("Farmer's Market", "Bagels, Sourdough, Granola, Cookies", "Claire and I enjoy cooking and this summer we are taking it to the town square.");
+const teaching = createEndeavour("Teaching", createTeaching, "Grand Forks Public Schools", "As a substitute teacher I cover many different subjects including at one point as an English teacher for an entire semester.", "Minot State University", "As an adjunct lecturer I teach philosophy online.");
+const webdev = createEndeavour("Web Development", createWebdev, "HTML, CSS, JavaScript", "I'm still learning, but I'm moving at break-neck speed.");
+const farmersMarket = createEndeavour("Farmer's Market", "https://bouquetbakery.net", "Bagels, Sourdough, Granola, Cookies", "Claire and I enjoy cooking and this summer we are taking it to the town square.");
 const endeavours = [teaching, webdev, farmersMarket,];
 
 const slideOut = [
@@ -160,7 +176,7 @@ function createHome() {
 			console.log("Done making cards");
 		};
 
-		const cardButton = document.createElement("button");
+		const cardButton = endeavour.button;
 		cardButton.textContent = "Read More";
 		card.appendChild(cardButton);
 	});

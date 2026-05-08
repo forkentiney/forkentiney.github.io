@@ -143,7 +143,7 @@
 		padding-left: 8px;
 		text-shadow: 1px 1px 4px var(--pane-dark);
 	}
-	button {
+	.button, button {
 		padding: 1em 2em;
 		background-color: var(--blue);
 		border: 2px solid var(--overlay-dark);
@@ -152,8 +152,10 @@
 		margin-top: 3em;
 		box-shadow: 4px 4px 12px var(--pane-dark);
 		color: var(--pane-light);
+		text-decoration: none;
+		font-weight: 500;
 	}
-	button:hover {
+	.button:hover, button:hover {
 		background-color: hsl(217 92% 72%);
 	}
 }
