@@ -1,9 +1,7 @@
 import "./home.css";
 import joshuaPic from "./static/images/profile.webp";
 import rightArrow from "./static/images/icons/right-arrow.svg";
-const createTeaching = () => {
-	console.log("Creating Teaching page");
-};
+import { createTeaching } from "./teaching.js";
 function createWebdev() {
 	console.log("Creating Webdev page");
 };
