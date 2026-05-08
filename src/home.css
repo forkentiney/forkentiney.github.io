@@ -75,7 +75,7 @@
 #temperature {
 	align-self: center;
 	font-family: "EB Garamond", serif;
-	font-size: clamp(48px, 9vw, 96px);
+	font-size: clamp(72px, 9vw, 96px);
 	font-weight: 800;
 	text-shadow: 2px 2px 4px var(--overlay-dark);
 }

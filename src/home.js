@@ -50,10 +50,10 @@ const endeavours = [teaching, webdev, farmersMarket,];
 
 const slideOut = [
 	{ transform: "translateX(0%)" },
-	{ transform: "translateX(-250%)" },
+	{ transform: "translateX(-800px)" },
 ];
 const slideIn = [
-	{ transform: "translateX(250%)" },
+	{ transform: "translateX(800px)" },
 	{ transform: "translateX(0%)" },
 ]
 
