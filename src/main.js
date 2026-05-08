@@ -5,8 +5,12 @@ const home = document.querySelector("#home");
 const portfolio = document.querySelector("#portfolio");
 const writing = document.querySelector("#writing");
 const about = document.querySelector("#about");
-
 const body = document.querySelector("#body");
+
+home.addEventListener("click", () => {
+	clearBody();
+	createHome();
+});
 
 function clearBody() {
 	console.log("Clearing body");

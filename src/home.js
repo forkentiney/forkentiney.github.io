@@ -48,6 +48,7 @@ const slideTiming = {
 };
 
 function createHome() {
+	i = 0; // Sets index for page status. Should reset on each page creation.
 	// Create about section.
 	const aboutSummary = document.createElement("div");
 	aboutSummary.setAttribute("id", "about-summary");
