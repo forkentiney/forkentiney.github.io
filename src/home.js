@@ -46,12 +46,20 @@ const webdev = createEndeavour("Web Development", createWebdev, "HTML, CSS, Java
 const farmersMarket = createEndeavour("Farmer's Market", "https://bouquetbakery.net", "Bagels, Sourdough, Granola, Cookies", "Claire and I enjoy cooking and this summer we are taking it to the town square.");
 const endeavours = [teaching, webdev, farmersMarket,];
 
-const slideOut = [
+const slideOutLeft = [
 	{ transform: "translateX(0%)" },
 	{ transform: "translateX(-800px)" },
 ];
-const slideIn = [
+const slideInRight = [
 	{ transform: "translateX(800px)" },
+	{ transform: "translateX(0%)" },
+]
+const slideOutRight = [
+	{ transform: "translateX(0%)" },
+	{ transform: "translateX(800px)" },
+]
+const slideInLeft = [
+	{ transform: "translateX(-800px)" },
 	{ transform: "translateX(0%)" },
 ]
 
@@ -91,15 +99,16 @@ function createHome() {
 	const locationText = document.createElement("p");
 	locationText.setAttribute("id", "location-text");
 
+	const weatherTitle = document.createElement("h2");
+	weatherTitle.setAttribute("id", "weather-title");
+
 	body.appendChild(locationsContainer);
 	locationsContainer.appendChild(locationDetails);
+	locationDetails.appendChild(weatherTitle);
 	locationDetails.appendChild(locationText);
 
 	const weatherContainer = document.createElement("div");
 	weatherContainer.setAttribute("id", "weather");
-
-	const weatherTitle = document.createElement("h4");
-	weatherTitle.setAttribute("id", "weather-title");
 
 	const temperature = document.createElement("p");
 	temperature.setAttribute("id", "temperature");
@@ -110,9 +119,10 @@ function createHome() {
 	const nextButton = document.createElement("button");
 	nextButton.setAttribute("id", "right-button");
 	nextButton.addEventListener("click", () => {
-		temperature.animate(slideOut, slideTiming);
-		weatherTitle.animate(slideOut, slideTiming);
-		condition.animate(slideOut, slideTiming);
+		temperature.animate(slideOutLeft, slideTiming);
+		weatherTitle.animate(slideOutRight, slideTiming);
+		condition.animate(slideOutLeft, slideTiming);
+		locationText.animate(slideOutRight, slideTiming);
 		setTimeout(cycleLocations, 250);
 	});
 
@@ -122,7 +132,6 @@ function createHome() {
 	buttonIcon.alt = "Next Button";
 
 	locationsContainer.appendChild(weatherContainer);
-	weatherContainer.appendChild(weatherTitle);
 	weatherContainer.appendChild(temperature);
 	weatherContainer.appendChild(condition);
 	weatherContainer.appendChild(nextButton);
@@ -194,17 +203,18 @@ async function cycleLocations() {
 	};
 
 	text.textContent = locations[i].details;
+	text.animate(slideInLeft, slideTiming);
 	title.textContent = locations[i].name;
-	title.animate(slideIn, slideTiming);
+	title.animate(slideInLeft, slideTiming);
 
 	const response = await fetch(locations[i].query);
 	const data = await response.json();
 	const temperature = Math.floor((data.currentConditions.temp - 32) / 1.8);
 	const conditions = data.currentConditions.conditions;
 	temp.textContent = `${temperature}°C`;
-	temp.animate(slideIn, slideTiming);
+	temp.animate(slideInRight, slideTiming);
 	condition.textContent = conditions;
-	condition.animate(slideIn, slideTiming);
+	condition.animate(slideInRight, slideTiming);
 };
 
 export { createHome };

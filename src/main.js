@@ -1,4 +1,5 @@
 import "./template.css";
+import "./teaching.css";
 import { createHome } from "./home.js";
 
 const home = document.querySelector("#home");
@@ -18,5 +19,3 @@ function clearBody() {
 		body.removeChild(body.firstChild);
 	};
 };
-
-createHome();
