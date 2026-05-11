@@ -2,6 +2,7 @@ import "./home.css";
 import joshuaPic from "./static/images/profile.webp";
 import rightArrow from "./static/images/icons/right-arrow.svg";
 import { createTeaching } from "./teaching.js";
+import { create404 } from "./error_404.js";
 function createWebdev() {
 	console.log("Creating Webdev page");
 };
@@ -41,8 +42,8 @@ function createEndeavour(name, goto, subname, details, subnameTwo, detailsTwo) {
 
 	return { title, subtitle, description, subtitle2, description2, button };
 };
-const teaching = createEndeavour("Teaching", createTeaching, "Grand Forks Public Schools", "As a substitute teacher I cover many different subjects including at one point as an English teacher for an entire semester.", "Minot State University", "As an adjunct lecturer I teach philosophy online.");
-const webdev = createEndeavour("Web Development", createWebdev, "HTML, CSS, JavaScript", "I'm still learning, but I'm moving at break-neck speed.");
+const teaching = createEndeavour("Teaching", create404, "Grand Forks Public Schools", "As a substitute teacher I cover many different subjects including at one point as an English teacher for an entire semester.", "Minot State University", "As an adjunct lecturer I teach philosophy online.");
+const webdev = createEndeavour("Web Development", create404, "HTML, CSS, JavaScript", "I'm still learning, but I'm moving at break-neck speed.");
 const farmersMarket = createEndeavour("Farmer's Market", "https://bouquetbakery.net", "Bagels, Sourdough, Granola, Cookies", "Claire and I enjoy cooking and this summer we are taking it to the town square.");
 const endeavours = [teaching, webdev, farmersMarket,];
 

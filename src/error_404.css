@@ -1,0 +1,9 @@
+#error-404 p {
+	text-align: center;
+	font-size: 36px;
+	font-weight: 600;
+}
+
+#error-404 {
+	margin: auto 0;
+}

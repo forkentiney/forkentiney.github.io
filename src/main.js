@@ -19,3 +19,7 @@ function clearBody() {
 		body.removeChild(body.firstChild);
 	};
 };
+
+createHome();
+
+export { clearBody };
